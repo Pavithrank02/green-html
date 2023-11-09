@@ -2,99 +2,10 @@ html {
   margin: 0;
   padding: 0;
 }
-.image-containers{
-  margin-top: 5rem;
-  margin-left: 30vw;
-  overflow: hidden;
-  
-}
-.image-container-top{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  column-gap: 3rem;
-  overflow: hidden;
-  margin-left: -22rem;
-}
-.btn{
-  margin-top: -4.5rem;
-  margin-left: -10rem;
-  margin-right: 1rem;
-}
-.animate__animated.animate__bounce {
-  --animate-duration: 3s;
-}
-.image-container-top-left > p{
-  font-size: 2.5rem;
-  width: 20vw;
-  font-weight: bolder;
-  overflow: hidden;
-}
-.image-container-top-left-p{
-  margin-top: -1rem;
-  overflow: hidden;
-}
-.image-container-top-right > p{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 20vw;
-  font-weight: lighter;
-  text-align: justify;
-  overflow: hidden;
-
-}
-
-.image-container-bottom{
-  display: flex;
-  flex-direction: row;
-  height: 60vh;
-  margin-left: 50vw;
-  overflow-x: hidden;
-}
-
-.moving-image {
-  animation-duration: 2s;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  width: 15vw;
-  height: 50vh;
-  cursor: pointer;
-  margin: 10px;
-  border-radius: 6%;
-  
-}
-.image-container{
-  display: flex;
-  flex-direction: row;
-  margin-left: -15rem;
-  height: 20vh;
-  width: 100%;
-  overflow-x: hidden;
-  overflow: visible;
-  scroll-behavior: smooth;
-}
-.image-container-bottom ::-webkit-scrollbar {
-  display: none;
-}
-.moving-image:hover{
-  opacity: 70%;
-}
-
-.moveRight {
-  animation-name: moveRight;
-}
-
-.moveLeft {
-  animation-name: moveLeft;
-}
-
-/* Base styles for larger screens */
 .side {
   position: fixed;
   width: 30vw;
-  margin: 0;
+  margin-top: -10vh;
 }
 
 .img- {
@@ -199,6 +110,96 @@ html {
   top: 0;
 }
 
+.image-containers{
+  margin-top: 5rem;
+  margin-left: 40vw;
+  overflow: hidden;
+  
+}
+.image-container-top{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 3rem;
+  overflow: hidden;
+  margin-left: -12vw;
+}
+.btn{
+  margin-top: -4.5rem;
+  margin-left: -10rem;
+  margin-right: 1rem;
+}
+.animate__animated.animate__bounce {
+  --animate-duration: 3s;
+}
+.image-container-top-left > p{
+  font-size: 2.5rem;
+  width: 20vw;
+  font-weight: bolder;
+  overflow: hidden;
+}
+.image-container-top-left-p{
+  margin-top: -1rem;
+  overflow: hidden;
+}
+.image-container-top-right > p{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 20vw;
+  font-weight: lighter;
+  text-align: justify;
+  overflow: hidden;
+
+}
+
+.image-container-bottom{
+  display: flex;
+  flex-direction: row;
+  height: 60vh;
+  overflow-x: hidden;
+  
+}
+
+.moving-image {
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  width: 15vw;
+  height: 50vh;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 6%;
+  
+}
+.image-container{
+  display: flex;
+  flex-direction: row;
+  margin-left: -15rem;
+  height: 20vh;
+  width: 100%;
+  overflow-x: hidden;
+  overflow: visible;
+  scroll-behavior: smooth;
+}
+.image-container-bottom ::-webkit-scrollbar {
+  display: none;
+}
+.moving-image:hover{
+  opacity: 70%;
+}
+
+.moveRight {
+  animation-name: moveRight;
+}
+
+.moveLeft {
+  animation-name: moveLeft;
+}
+
+/* Base styles for larger screens */
+
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
   .side {
@@ -252,7 +253,7 @@ html {
   margin-top: 10vh;
   width: 50vw;
   height: 40vh;
-  margin-left: 6rem;
+  margin-left: 45vw;
 }
 .btn > button{
   margin-top: 13vh;
