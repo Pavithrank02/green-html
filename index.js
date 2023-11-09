@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
   let isMovingRight = false;
   let isTransition = false;
   moveRightButton.addEventListener("click", function() {
+    document.documentElement.style.setProperty('--animate-duration', '2s');
       isMovingRight = !isMovingRight;
       isTransition = !isTransition;
       const animation = isMovingRight ? "moveRight" : "moveLeft";
@@ -13,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
       console.log(animationNames, isTransition)
       side.forEach(image => {
         image.style.animationName = animationNames;
-        void image.offsetWidth; // Trigger reflow to restart the animation
+        void image.offsetHeight; // Trigger reflow to restart the animation
     });
       images.forEach(image => {
           image.style.animationName = animation;
