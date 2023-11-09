@@ -9,14 +9,19 @@ html {
 }
 
 .img- {
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
   height: 100vh;
   width: 30vw;
   position: fixed;
   transition: height 2s;
 }
-
 .small-image {
-  height: 63%;
+  animation-name: moveRight;
+}
+.small-image {
+ transform: scale(0.5);
 }
 
 .logo {
@@ -183,7 +188,7 @@ html {
   overflow: visible;
   scroll-behavior: smooth;
 }
-.image-container-bottom ::-webkit-scrollbar {
+::-webkit-scrollbar {
   display: none;
 }
 .moving-image:hover{
