@@ -313,7 +313,7 @@ body {
 /* Base styles for larger screens */
 
 /* Responsive styles for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 308px) {
   .side {
     width: 100%;
   }
@@ -431,3 +431,4 @@ body {
   transform: translateX(-50%);
   /* Move to the left */
 }
+
