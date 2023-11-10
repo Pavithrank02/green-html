@@ -6,6 +6,8 @@ html {
   position: fixed;
   width: 30vw;
   margin-top: -10vh;
+  z-index: 2;
+  transition: width 1s ease;
 }
 
 .img- {
@@ -15,10 +17,13 @@ html {
   height: 100vh;
   width: 30vw;
   position: fixed;
-  transition: height 2s;
+  transition: transform 0.5s ease;
+  transform-origin: top center; /* Add a transition for the transform property */
 }
-.small-image {
-  animation-name: moveRight;
+
+
+.half-size {
+  transform: scaleY(0.63); /* Set the scale to half size */
 }
 .small-image {
   animation-duration: 2s;
@@ -119,10 +124,20 @@ html {
 }
 
 .image-containers{
+  position: relative;
   margin-top: 5rem;
-  margin-left: 40vw;
+  padding-left: 25vw;
   overflow: hidden;
-  
+  right: 0;
+  z-index: -1; /* Move behind the fixed side */
+  transition: transform 0.5s ease; 
+}
+.element.right {
+  transition: transform 0.5s ease;
+}
+
+.move-behind .element.right {
+  transform: translateX(-55vw); /* Move to the left when move-behind class is added */
 }
 .image-container-top{
   display: flex;
@@ -130,8 +145,7 @@ html {
   justify-content: center;
   align-items: center;
   column-gap: 3rem;
-  overflow: hidden;
-  margin-left: -12vw;
+  overflow: hidden; 
 }
 .btn{
   margin-top: -4.5rem;
@@ -184,7 +198,7 @@ html {
   flex-direction: row;
   height: 60vh;
   overflow-x: hidden;
-  margin-left: 1vw;
+  padding-left: 15vw;
 }
 
 .moving-image {
@@ -201,7 +215,6 @@ html {
 .image-container{
   display: flex;
   flex-direction: row;
-  margin-left: -15rem;
   height: 20vh;
   width: 100%;
   overflow-x: hidden;
@@ -283,6 +296,14 @@ html {
   width: 50vw;
   height: 40vh;
   margin-left: 120vw;
+  opacity: 0; /* Initially hidden */
+  position: absolute;
+  background-color: #555; /* Adjust the background color as needed */
+  transition: left 0.5s ease, opacity 0.5s ease; /* Add transitions for position and opacity changes */
+}
+.show-secondary .secondary {
+  left: 0; /* Move into the viewport when the .show-secondary class is added */
+  opacity: 1;
 }
 .btn > button{
   margin-top: 13vh;
