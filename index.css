@@ -229,12 +229,14 @@ body{
 }
 .move-down {
   height: auto; /* Set the height to auto to reveal the image container */
+  cursor: pointer ;
 }
 
 .move-down .moving-image:nth-child(1) {
   transform: translateY(120px) translateX(-470px); /* Adjust the transformation for each image */
   width: 7.2vw;
   height: 21vh; /* Reduce the width by half */
+  cursor: pointer ;
 }
 
 .move-down .moving-image:nth-child(2) {
