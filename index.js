@@ -34,3 +34,26 @@ document.getElementById('moveRight').addEventListener('click', function() {
   document.querySelector('.image-containers').classList.toggle('move-behind');
   
 });
+function scrollContainer(direction) {
+  const container = document.getElementById('scrollable-container');
+  const scrollAmount = 200; // Adjust the scroll amount as needed
+
+  if (direction === 'left') {
+    container.scrollLeft -= scrollAmount;
+  } else if (direction === 'right') {
+    container.scrollLeft += scrollAmount;
+  }
+}
+document.getElementById('moveRight').addEventListener('click', function() {
+  document.querySelector('.image-container-bottom').classList.toggle('move-down');
+});
+document.getElementById('moveRight').addEventListener('click', function() {
+  document.querySelector('.secondary').classList.toggle('show-secondary');
+});
+
+
+
+
+
+
+
