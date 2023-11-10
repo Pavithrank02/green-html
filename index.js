@@ -2,7 +2,7 @@
 //   const images = document.querySelectorAll(".moving-image");
 //   const side = document.querySelectorAll(".img-");
 //   const moveRightButton = document.getElementById("moveRight");
-  
+
 //   let isMovingRight = false;
 //   let isTransition = false;
 //   moveRightButton.addEventListener("click", function() {
@@ -28,17 +28,17 @@
 //     this.classList.toggle('behind');
 //   });
 // });
-document.getElementById('moveRight').addEventListener('click', function() {
+document.getElementById('moveRight').addEventListener('click', function () {
   document.querySelector('.img-').classList.toggle('half-size');
   document.querySelector('.side').classList.toggle('expand-side');
   document.querySelector('.image-containers').classList.toggle('move-behind');
   document.querySelector('.image-container-bottom').classList.toggle('move-down');
   document.querySelector('.secondary').classList.toggle('show-secondary');
-  
-});
-document.getElementById('moveLeft').addEventListener('click', function() {
 
-   document.querySelector('.img-').classList.toggle('half-size');
+});
+document.getElementById('moveLeft').addEventListener('click', function () {
+
+  document.querySelector('.img-').classList.toggle('half-size');
   document.querySelector('.side').classList.toggle('expand-side');
   document.querySelector('.image-containers').classList.toggle('move-behind');
   document.querySelector('.image-container-bottom').classList.toggle('move-down');

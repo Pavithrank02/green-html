@@ -2,10 +2,12 @@ html {
   margin: 0;
   padding: 0;
 }
-body{
+
+body {
   margin: 0;
   padding: 0;
 }
+
 .side {
   position: fixed;
   top: 0;
@@ -22,10 +24,13 @@ body{
   width: 33vw;
   position: fixed;
   transition: transform 3s ease;
-  transform-origin: top center; /* Add a transition for the transform property */
+  transform-origin: top center;
+  /* Add a transition for the transform property */
 }
+
 .half-size {
-  transform: scaleY(0.56); /* Set the scale to half size */
+  transform: scaleY(0.56);
+  /* Set the scale to half size */
 }
 
 .logo {
@@ -37,7 +42,7 @@ body{
   font-style: italic;
 }
 
-.logo > p {
+.logo>p {
   margin-left: 2rem;
   margin-top: -2rem;
 }
@@ -52,7 +57,7 @@ body{
   font-style: italic;
 }
 
-.msg > h1 {
+.msg>h1 {
   margin-top: -1rem;
 }
 
@@ -119,54 +124,64 @@ body{
   top: 0;
 }
 
-.image-containers{
+.image-containers {
   position: relative;
   position: fixed;
   margin-top: 5rem;
   width: 70vw;
   left: 30vw;
   overflow: hidden;
-  z-index: -1; /* Move behind the fixed side */
-  transition: transform 3s ease; 
+  z-index: -1;
+  /* Move behind the fixed side */
+  transition: transform 3s ease;
 }
+
 .element.right {
   transition: transform 3s ease;
 }
 
 .move-behind .element.right {
-  transform: translateX(-55vw); /* Move to the left when move-behind class is added */
+  transform: translateX(-55vw);
+  /* Move to the left when move-behind class is added */
 }
-.image-container-top{
+
+.image-container-top {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  column-gap: 3rem; 
-  overflow: hidden; 
+  column-gap: 3rem;
+  overflow: hidden;
   width: 60vw;
 }
-.btn{
+
+.btn {
   margin-top: -4.5rem;
   margin-left: -10rem;
   margin-right: 1rem;
 }
+
 .animate__animated.animate__bounce {
   --animate-duration: 3s;
 }
-.image-container-top-left{
+
+.image-container-top-left {
   display: flex;
   flex-direction: column;
-  padding-left: 11vw ;
+  padding-left: 11vw;
 }
-.image-container-top-left > p{
+
+.image-container-top-left>p {
   font-size: 2.5rem;
   font-weight: bolder;
 }
-.image-container-top-left-p{
+
+.image-container-top-left-p {
   margin-top: -1rem;
   overflow: hidden;
 }
-.image-container-top-right > p{
+
+.image-container-top-right>p {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -177,7 +192,7 @@ body{
 
 }
 
-.image-container-bottom{
+.image-container-bottom {
   display: flex;
   flex-direction: row;
   height: 60vh;
@@ -194,9 +209,10 @@ body{
   margin: 10px;
   border-radius: 6%;
   transition: transform 3s ease, width 3s ease;
-  
+
 }
-.image-container{
+
+.image-container {
   display: flex;
   position: fixed;
   flex-direction: row;
@@ -206,8 +222,9 @@ body{
   top: 40%;
   left: 40%;
   width: max-content;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
+
 .scroll-button {
   position: absolute;
   top: 50%;
@@ -227,51 +244,61 @@ body{
 .right {
   right: 0;
 }
+
 .move-down {
-  height: auto; /* Set the height to auto to reveal the image container */
-  cursor: pointer ;
+  height: auto;
+  /* Set the height to auto to reveal the image container */
+  cursor: pointer;
 }
 
 .move-down .moving-image:nth-child(1) {
-  transform: translateY(120px) translateX(-470px); /* Adjust the transformation for each image */
+  transform: translateY(120px) translateX(-470px);
+  /* Adjust the transformation for each image */
   width: 7.2vw;
-  height: 21vh; /* Reduce the width by half */
-  cursor: pointer ;
+  height: 21vh;
+  /* Reduce the width by half */
+  cursor: pointer;
 }
 
 .move-down .moving-image:nth-child(2) {
-  transform: translateY(120px) translateX(-480px); /* Adjust the transformation for each image */
+  transform: translateY(120px) translateX(-480px);
+  /* Adjust the transformation for each image */
   width: 7.2vw;
-  height: 21vh; /* Reduce the width by half */
+  height: 21vh;
+  /* Reduce the width by half */
 }
 
 .move-down .moving-image:nth-child(3) {
-  transform: translateY(120px) translateX(-490px); /* Adjust the transformation for each image */
+  transform: translateY(120px) translateX(-490px);
+  /* Adjust the transformation for each image */
   width: 7.2vw;
-  height: 21vh; /* Reduce the width by half */
+  height: 21vh;
+  /* Reduce the width by half */
 }
 
 .move-down .moving-image:nth-child(4) {
   transform: translateY(280px) translateX(-860px);
   width: 7.2vw;
-  height: 21vh;  
+  height: 21vh;
 }
 
 .move-down .moving-image:nth-child(5) {
   transform: translateY(280px) translateX(-870px);
   width: 7.2vw;
-  height: 21vh; 
+  height: 21vh;
 }
 
 .move-down .moving-image:nth-child(6) {
   transform: translateY(280px) translateX(-880px);
   width: 7.2vw;
-  height: 21vh;  
+  height: 21vh;
 }
+
 ::-webkit-scrollbar {
   display: none;
 }
-.moving-image:hover{
+
+.moving-image:hover {
   opacity: 70%;
 }
 
@@ -332,61 +359,75 @@ body{
     height: 5rem;
   }
 }
-.secondary{
+
+.secondary {
   display: flex;
   position: fixed;
   flex-direction: column;
   top: 10vh;
   width: 50vw;
   height: 40vh;
-  transform: translateX(250%); /* Initially outside the viewport */
-  transition: transform 3s ease;  /* Add transitions for position and opacity changes */
+  transform: translateX(250%);
+  /* Initially outside the viewport */
+  transition: transform 3s ease;
+  /* Add transitions for position and opacity changes */
 }
+
 .show-secondary {
   transform: translateX(100%);
 }
-.btn > button{
+
+.btn>button {
   margin-top: 13vh;
   margin-left: -6vw;
   margin-right: 12vh;
 }
-.top{
+
+.top {
   display: flex;
   flex-direction: row;
 }
-.left-blk{
+
+.left-blk {
   display: flex;
   flex-direction: column;
   width: 40vw;
   font-size: medium;
 }
-.left-blk >h2{
+
+.left-blk>h2 {
   margin-bottom: 1rem;
   margin-top: -1rem;
 }
-.right-blk{
+
+.right-blk {
   display: flex;
   justify-content: center;
   margin-right: 3vw;
-  
+
 }
-.right-img{
+
+.right-img {
   margin-top: 2vh;
   height: 48vh;
   margin-left: 30px;
   width: 28vw;
 }
-.first{
+
+.first {
   display: flex;
   justify-content: center;
   text-align: justify;
   margin-top: -1rem;
 }
-.second{
+
+.second {
   text-align: justify;
   width: 54vw;
   margin-left: -6.5vw;
 }
+
 .move-left {
-  transform: translateX(-50%); /* Move to the left */
+  transform: translateX(-50%);
+  /* Move to the left */
 }
