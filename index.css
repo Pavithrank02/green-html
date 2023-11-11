@@ -30,7 +30,6 @@ body {
 
 .half-size {
   transform: scaleY(0.56);
-  /* Set the scale to half size */
 }
 
 .logo {
