@@ -22,12 +22,6 @@
 //       });
 //   });
 // });
-// document.querySelectorAll('.element').forEach(function(el) {
-//   el.addEventListener('click', function() {
-//     this.classList.add('clicked');
-//     this.classList.toggle('behind');
-//   });
-// });
 document.getElementById('moveRight').addEventListener('click', function () {
   document.querySelector('.img-').classList.toggle('half-size');
   document.querySelector('.side').classList.toggle('expand-side');
