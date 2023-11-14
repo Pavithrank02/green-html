@@ -1,7 +1,6 @@
 // document.addEventListener("DOMContentLoaded", function() {
 //   const images = document.querySelectorAll(".moving-image");
 //   const side = document.querySelectorAll(".img-");
-//   const moveRightButton = document.getElementById("moveRight");
 
 //   let isMovingRight = false;
 //   let isTransition = false;
