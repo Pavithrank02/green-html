@@ -3,7 +3,7 @@
 //   const side = document.querySelectorAll(".img-");
 
 //   let isMovingRight = false;
-//   let isTransition = false;
+
 //   moveRightButton.addEventListener("click", function() {
 //     document.documentElement.style.setProperty('--animate-duration', '2s');
 //       isMovingRight = !isMovingRight;
