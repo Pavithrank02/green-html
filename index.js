@@ -15,7 +15,7 @@
 //         image.style.animationName = animationNames;
 //         void image.offsetHeight; // Trigger reflow to restart the animation
 //     });
-//       images.forEach(image => {
+//       images.forEach(image => 
 //           image.style.animationName = animation;
 //           void image.offsetWidth; // Trigger reflow to restart the animation
 //       });
